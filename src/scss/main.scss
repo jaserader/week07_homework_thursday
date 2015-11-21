@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  height: 70px;
+  background: #55ACEE;
+  padding-right: 60px;
+  padding-left: 40px;
+  padding-top: 17px;
+  color: #fff;
+
+    i {
+      font-size: 25px;
+      height: 30px;
+      margin-right: 5px;
+    }
+
+    span {
+      font-size: 30px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      float: right;
+      padding-right: 10px;
+      }
+  }
+
+  form {
+    padding-top: 35px;
+    padding-left: 15px;
+    display: block;
+    height: 100px;
+    background: #35CE94;
+
+      span{
+        margin-left: 10px;
+        color: #fff;
+      }
+
+      input {
+        margin-left: 5px;
+        border: none;
+        border-radius: 5px;
+        width: 15%;
+        height: 30px;
+        font-size: 15px;
+      }
+  }

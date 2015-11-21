@@ -2,30 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import jQuery from 'jquery';
 
+import Header from './header';
+import Tweet from './tweet';
+import TweetList from './tweet_list';
+import Register from './register';
+
 
 class App extends React.Component {
-  constructor(props) {
-    // do all the stuff that our react.component's constructor would
-    // normally do.
-    super(props);
-
-    this.state = {
-        hasLoaded: false,
-      };
-    }
-
-  render() {
+  render () {
     return(
-      <div>
-        Test
+      <div className="Main">
+        <Header/>
+        <TweetList/>
+        <Register/>
       </div>
     )
   }
 };
 
-ReactDOM.render(
-  <App/>,
-  document.getElementById('app')
-);
+ReactDOM.render(<App/>,document.getElementById('app'));
 
 export default App;
