@@ -12,9 +12,9 @@ header {
   color: #fff;
 
     i {
-      font-size: 25px;
+      font-size: 22px;
       height: 30px;
-      margin-right: 5px;
+      margin-right: 8px;
     }
 
     span {
@@ -26,27 +26,63 @@ header {
       text-decoration: none;
       float: right;
       padding-right: 10px;
+      margin-top: 10px;
       }
   }
 
+  .tweets {
+    list-style: none;
+    padding-left: 35%;
+
+    li {
+      width: 400px;
+      background: #35CE94;
+      padding: 10px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+  }
+
   form {
+    margin: 15px 0 15px 25%;
     padding-top: 35px;
     padding-left: 15px;
     display: block;
-    height: 100px;
+    height: 400px;
+    width: 50%;
     background: #35CE94;
 
       span{
+        width: 100%;
         margin-left: 10px;
         color: #fff;
       }
 
       input {
         margin-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 10px;
         border: none;
         border-radius: 5px;
-        width: 15%;
+        width: 95%;
         height: 30px;
         font-size: 15px;
       }
+  }
+
+  footer {
+    height: 70px;
+    background: #55ACEE;
+    padding-top: 18px;
+    padding-left: 43%;
+
+    span {
+      font-size: 30px;
+      color: #fff;
+
+      i {
+        padding-right: 8px;
+      }
+    }
   }

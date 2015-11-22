@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 class Header extends React.Component {
   render(){
@@ -6,8 +6,8 @@ class Header extends React.Component {
       <header>
         <span><i className="fa fa-twitter"></i>twitter</span>
         <a href="#">Home</a>
-        <a href="#">Login</a>
-        <a href="#">Register</a>
+        <a href="#/tweet_list">Tweet List</a>
+        <a href="#/register">Register</a>
       </header>
     )
   }

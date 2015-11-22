@@ -1,6 +1,8 @@
 import React from 'react';
 import Jquery from 'jquery';
 
+import {Router, Route, Link} from 'react-router';
+
 import Tweet from './tweet';
 
 class TweetList extends React.Component {
@@ -38,7 +40,7 @@ class TweetList extends React.Component {
       });
 
     return(
-      <ul>
+      <ul className="tweets">
         {tweets}
       </ul>
     )}

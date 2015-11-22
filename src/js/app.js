@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import jQuery from 'jquery';
+import React, { PropTypes } from 'react';
+
+import {render} from 'react-dom';
+import {Router, Route, Link} from 'react-router';
 
 import Header from './header';
 import Tweet from './tweet';
 import TweetList from './tweet_list';
 import Register from './register';
+import Footer from './footer';
 
 
 class App extends React.Component {
@@ -13,13 +15,22 @@ class App extends React.Component {
     return(
       <div className="Main">
         <Header/>
-        <TweetList/>
-        <Register/>
+        <main>
+          {this.props.children}
+        </main>
+        <Footer/>
       </div>
     )
   }
 };
 
-ReactDOM.render(<App/>,document.getElementById('app'));
+let routes = (
+  <Router>
+    <Route path='/' component={App}>
+      <Route path='/register' component={Register}></Route>
+      <Route path='/tweet_list' component={TweetList}></Route>
+    </Route>
+  </Router>
+);
 
-export default App;
+render(routes, document.getElementById('app'));
