@@ -7,6 +7,7 @@ import Header from './header';
 import Tweet from './tweet';
 import TweetList from './tweet_list';
 import Register from './register';
+import Login from './login';
 import Footer from './footer';
 
 
@@ -27,6 +28,7 @@ class App extends React.Component {
 let routes = (
   <Router>
     <Route path='/' component={App}>
+      <Route path='/login' component={Login}></Route>
       <Route path='/register' component={Register}></Route>
       <Route path='/tweet_list' component={TweetList}></Route>
     </Route>

@@ -8,6 +8,7 @@ class Header extends React.Component {
         <a href="#">Home</a>
         <a href="#/tweet_list">Tweet List</a>
         <a href="#/register">Register</a>
+        <a href="#/login">Login</a>
       </header>
     )
   }
