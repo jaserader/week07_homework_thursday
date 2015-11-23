@@ -30,7 +30,7 @@ class Register extends React.Component {
           <input></input>
         <span>Confirm Password:</span>
           <input></input>
-        <input type="submit" value="Submit"></input>
+        <input type="submit" value="Register"></input>
       </form>
     )
   }

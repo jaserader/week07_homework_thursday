@@ -28,6 +28,7 @@ header {
   .tweets li {
     width: 400px;
     background: #35CE94;
+    border-radius: 7px;
     padding: 10px;
     margin-bottom: 10px;
     color: #fff; }
