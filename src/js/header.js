@@ -1,13 +1,17 @@
-import React, { PropTypes } from 'react';
+import React from 'react'
 
 class Header extends React.Component {
-  render(){
+  render () {
     return (
-      <header>
-        <span><i className="fa fa-twitter"></i>twitter</span>
-        <a href="#">Home</a>
-        <a href="#/tweet_list">Tweet List</a>
-        <a href="#/register">Register</a>
+      <header className="main">
+        <h1>Twitterz</h1>
+
+        <img src="http://www.fillmurray.com/60/60" alt="Avatar" title="Bill... f'ing murray"/>
+
+        <nav>
+          <a href="#/login">Login</a>
+          <a href="#/register">Register</a>
+        </nav>
       </header>
     )
   }

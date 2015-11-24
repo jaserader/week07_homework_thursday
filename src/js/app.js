@@ -1,34 +1,33 @@
-import React, { PropTypes } from 'react';
-
+import React from 'react'
 import {render} from 'react-dom';
-import {Router, Route, Link} from 'react-router';
+import {Router, Route} from 'react-router';
 
-import Header from './header';
-import Tweet from './tweet';
-import TweetList from './tweet_list';
-import Register from './register';
-import Footer from './footer';
+import Header from './components/header';
+import Feed from './components/feed';
+import Users from './components/users';
+import AuthForm from './components/auth-form';
 
 
 class App extends React.Component {
-  render () {
-    return(
-      <div className="Main">
+  render(){
+    return (
+      <div>
         <Header/>
         <main>
           {this.props.children}
         </main>
-        <Footer/>
       </div>
     )
   }
-};
+}
 
-let routes = (
+const routes = (
   <Router>
-    <Route path='/' component={App}>
-      <Route path='/register' component={Register}></Route>
-      <Route path='/tweet_list' component={TweetList}></Route>
+    <Route path="/" component={App}>
+      <Route name="login" path="login" component={AuthForm} />
+      <Route path="register" component={AuthForm} />
+      <Route path="dashboard" component={Feed} />
+      <Route path="users" component={Users} />
     </Route>
   </Router>
 );
