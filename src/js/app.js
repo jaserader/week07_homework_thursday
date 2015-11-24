@@ -1,14 +1,14 @@
 import React, { PropTypes } from 'react';
 
 import {render} from 'react-dom';
-import {Router, Route, Link} from 'react-router';
+import {Router, Route} from 'react-router';
 
 import Header from './header';
 import Tweet from './tweet';
 import TweetList from './tweet_list';
-import Register from './register';
-import Login from './login';
 import Footer from './footer';
+import Users from './users'
+import AuthForm from './auth-form'
 
 
 class App extends React.Component {
@@ -25,12 +25,13 @@ class App extends React.Component {
   }
 };
 
-let routes = (
+const routes = (
   <Router>
     <Route path='/' component={App}>
-      <Route path='/login' component={Login}></Route>
-      <Route path='/register' component={Register}></Route>
-      <Route path='/tweet_list' component={TweetList}></Route>
+      <Route name='login' path='login' component={AuthForm}></Route>
+      <Route path='register' component={AuthForm}></Route>
+      <Route path='tweet_list' component={TweetList}></Route>
+      <Route path='users' component={Users}></Route>
     </Route>
   </Router>
 );
