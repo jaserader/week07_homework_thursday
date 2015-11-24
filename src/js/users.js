@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
 import $ from 'jquery';
 
 class Users extends React.Component {
@@ -9,6 +9,7 @@ class Users extends React.Component {
       users: []
     };
   }
+
   componentDidMount() {
     $.ajax('https://twitterapii.herokuapp.com/users.json').then(response => {
       this.setState({
@@ -16,6 +17,7 @@ class Users extends React.Component {
       });
     });
   }
+
   render () {
     let items = this.state.users.map(user => {
       let url = `http://placekitten.com/60/60`;

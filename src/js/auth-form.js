@@ -41,8 +41,8 @@ class AuthForm extends React.Component {
 
     if (email && password && password === passwordConfirm) {
       User.register({
-        email: email,
-        password: password
+        "email": email,
+        "password": password
       }, (error, data) => {
         if (!error) {
           alert('Test');
