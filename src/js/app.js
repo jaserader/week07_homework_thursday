@@ -7,9 +7,10 @@ import Header from './header';
 import Tweet from './tweet';
 import TweetList from './tweet_list';
 import Footer from './footer';
-import Users from './users'
-import AuthForm from './auth-form'
+import Users from './users';
+import AuthForm from './auth-form';
 
+import User from './user';
 
 class App extends React.Component {
   render () {
